@@ -1,5 +1,5 @@
 
-DIRS=btest external
+DIRS=btest external bro-core-coverage
 
 all: make-verbose coverage
 
