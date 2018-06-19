@@ -143,12 +143,8 @@ append_cache_entry INSTALL_BROCTL       BOOL   true
 append_cache_entry CPACK_SOURCE_IGNORE_FILES STRING
 append_cache_entry ENABLE_MOBILE_IPV6   BOOL   false
 append_cache_entry DISABLE_PERFTOOLS    BOOL   false
-<<<<<<< HEAD
-=======
 append_cache_entry DISABLE_RUBY_BINDINGS     BOOL   true
 append_cache_entry ENABLE_COVERAGE	BOOL   false
-
->>>>>>> dc3b8c616... Version of Bro w/ core code coverage capabilities
 
 # parse arguments
 while [ $# -ne 0 ]; do
