@@ -5,7 +5,7 @@ test:
 
 cleanup:
 	@find ../../ -name "*.gcov" -exec rm {} \;
-	@rm coverage.log
+	@find . -name "*.log" -exec rm {} \;
 
 clean:
 	@find ../../ -name "*.gcno" -exec rm {} \;

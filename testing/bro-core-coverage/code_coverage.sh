@@ -110,7 +110,7 @@ for i in $(ls ${TMP}/*); do
 	# Only the gcov files with "#" (the ones that contain path information)
 	# Also, _only_ the gcov files include # in their name
 	if [ $(expr $(basename "$i") : "#") -eq 1 ] && [[ "$i" != *"c++"* ]]; then
-		mv $i $( dirname $(echo $(basename $i) | sed 's/#/\//g' ) )
+		mv $i $(echo $(basename $i) | sed 's/#/\//g' )
 	fi
 done
 echo "ok"
