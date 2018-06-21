@@ -1,13 +1,9 @@
-all: cleanup test
-
-test: 
+coverage: cleanup
 	@./code_coverage.sh
 
 cleanup:
+	@rm -f coverage.log
 	@find ../../ -name "*.gcov" -exec rm {} \;
-	@find . -name "*.log" -exec rm {} \;
 
-clean:
+distclean: cleanup
 	@find ../../ -name "*.gcno" -exec rm {} \;
-
-coverage: 
